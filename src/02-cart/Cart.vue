@@ -28,11 +28,10 @@ export default {
   props: ["cart"],
   computed: {
     total() {
-      // return this.articles.reduce(
-      //   (acum, item) => acum + item.price * item.quantity,
-      //   0,
-      // );
-      return 3;
+      return this.cart.reduce(
+        (acum, item) => acum + item.price * item.quantity,
+        0,
+      );
     },
   },
   methods: {
