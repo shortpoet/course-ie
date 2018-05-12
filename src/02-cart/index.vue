@@ -20,7 +20,7 @@ export default {
   }),
   methods: {
     removeCartItem(cartItem) {
-      this.cart = this.cart.filter(art => art.id === cartItem.id);
+      this.cart = this.cart.filter(art => art.id !== cartItem.id);
     },
     addToCart(cartItem) {
       const index = this.cart.findIndex(item => item.id === cartItem.id);
