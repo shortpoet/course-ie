@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import NameForm from "./name-form";
-import NameViewer from "./name-viewer";
+import NameForm from "./Nameform";
+import NameViewer from "./NameViewer";
 
 export default {
   components: {
