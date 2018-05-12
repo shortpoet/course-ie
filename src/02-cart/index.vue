@@ -1,6 +1,6 @@
 <template>
 	<div id="app">
-		<cart :cart="cart" @remove="removeArticle"/>
+		<cart :cart="cart" @remove="removeCartItem"/>
 		<articles :articles="articles" @add="addToCart"/>
 	</div>
 </template>
@@ -19,15 +19,13 @@ export default {
     ],
   }),
   methods: {
-    removeArticle(article) {
-      // or this.$delete(this.cart, article.id)
-      const { excluded, ...restObj } = obj;
-      this.cart = this.cart.filter(art => art.id === article.id);
+    removeCartItem(cartItem) {
+      this.cart = this.cart.filter(art => art.id === cartItem.id);
     },
-    addToCart(article) {
-      const index = this.cart.findIndex(item => item.id === article.id);
+    addToCart(cartItem) {
+      const index = this.cart.findIndex(item => item.id === cartItem.id);
       if (index === -1) {
-        this.cart.push({ ...article, quantity: 1 });
+        this.cart.push({ ...cartItem, quantity: 1 });
       } else {
         this.cart[index].quantity++;
       }
