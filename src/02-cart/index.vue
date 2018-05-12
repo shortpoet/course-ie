@@ -11,7 +11,7 @@ import Articles from "./Articles";
 
 export default {
   data: () => ({
-    cart: {},
+    cart: [],
     articles: [
       { id: 2, name: "Shoes", price: 23.4 },
       { id: 4, name: "Sun Glasses", price: 15.99 },
@@ -20,18 +20,16 @@ export default {
   }),
   methods: {
     removeArticle(article) {
-      const cart = { ...this.cart };
-      delete cart[article.id];
-      this.cart = cart;
+      // or this.$delete(this.cart, article.id)
+      const { excluded, ...restObj } = obj;
+      this.cart = this.cart.filter(art => art.id === article.id);
     },
     addToCart(article) {
-      if (!this.cart[article.id]) {
-        this.cart = {
-          ...this.cart,
-          [article.id]: { ...article, quantity: 1 },
-        };
+      const index = this.cart.findIndex(item => item.id === article.id);
+      if (index === -1) {
+        this.cart.push({ ...article, quantity: 1 });
       } else {
-        this.cart[article.id].quantity++;
+        this.cart[index].quantity++;
       }
     },
   },
