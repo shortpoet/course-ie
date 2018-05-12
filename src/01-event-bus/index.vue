@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import NameForm from "./Nameform";
+import NameForm from "./NameForm";
 import NameViewer from "./NameViewer";
 
 export default {

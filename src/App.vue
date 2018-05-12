@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Example from "./03-cart-vuex";
+import Example from "./01-event-bus";
 
 export default {
   name: "app",
