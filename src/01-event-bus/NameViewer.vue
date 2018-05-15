@@ -11,6 +11,6 @@ export default {
     bus.$on("update-name", name => {
       this.name = name;
     });
-  },
+  }
 };
 </script>

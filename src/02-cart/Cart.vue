@@ -30,14 +30,14 @@ export default {
     total() {
       return this.cart.reduce(
         (acum, item) => acum + item.price * item.quantity,
-        0,
+        0
       );
-    },
+    }
   },
   methods: {
     remove(article) {
       this.$emit("remove", article);
-    },
-  },
+    }
+  }
 };
 </script>

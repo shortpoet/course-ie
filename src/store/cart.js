@@ -1,6 +1,6 @@
 export default {
   state: () => ({
-    cart: [],
+    cart: []
   }),
   mutations: {
     removeCartItem(state, cartItem) {
@@ -13,11 +13,11 @@ export default {
       } else {
         state.cart[index].quantity++;
       }
-    },
+    }
   },
   getters: {
     total: state =>
-      state.cart.reduce((acum, item) => acum + item.price * item.quantity, 0),
+      state.cart.reduce((acum, item) => acum + item.price * item.quantity, 0)
   },
-  namespaced: true,
+  namespaced: true
 };

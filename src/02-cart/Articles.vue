@@ -16,7 +16,7 @@ export default {
   methods: {
     add(article) {
       this.$emit("add", article);
-    },
-  },
+    }
+  }
 };
 </script>

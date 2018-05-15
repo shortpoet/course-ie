@@ -10,7 +10,7 @@ export default {
   methods: {
     notify() {
       bus.$emit("update-name", this.name);
-    },
-  },
+    }
+  }
 };
 </script>

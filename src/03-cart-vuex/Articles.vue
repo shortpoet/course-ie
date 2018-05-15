@@ -15,10 +15,10 @@ import { mapState, mapMutations } from "vuex";
 
 export default {
   computed: {
-    ...mapState("articles", ["articles"]),
+    ...mapState("articles", ["articles"])
   },
   methods: {
-    ...mapMutations("cart", ["addToCart"]),
-  },
+    ...mapMutations("cart", ["addToCart"])
+  }
 };
 </script>

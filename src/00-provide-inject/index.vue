@@ -7,10 +7,10 @@ import Parent from "./Parent";
 
 export default {
   provide: {
-    name: "Jessie",
+    name: "Jessie"
   },
   components: {
-    Parent,
-  },
+    Parent
+  }
 };
 </script>

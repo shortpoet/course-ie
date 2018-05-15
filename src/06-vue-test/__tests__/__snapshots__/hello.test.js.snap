@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hello component renders correctly 1`] = `
+<div>
+  Hello Vue from !
+  <button>Say Hi</button>
+</div>
+`;
+
+exports[`Hello component renders correctly after changing the name state 1`] = `
+<div>
+  Hello Camel from !
+  <button>Say Hi</button>
+</div>
+`;
+
+exports[`Hello component renders correctly passing the from prop 1`] = `
+<div>
+  Hello Vue from Joe!
+  <button>Say Hi</button>
+</div>
+`;

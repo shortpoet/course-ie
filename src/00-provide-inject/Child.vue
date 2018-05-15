@@ -4,6 +4,6 @@
 
 <script>
 export default {
-  inject: ["name"],
+  inject: ["name"]
 };
 </script>

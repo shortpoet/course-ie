@@ -10,7 +10,7 @@ import Example from "./01-event-bus";
 export default {
   name: "app",
   components: {
-    Example,
-  },
+    Example
+  }
 };
 </script>

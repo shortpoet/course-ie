@@ -12,7 +12,7 @@ import NameViewer from "./NameViewer";
 export default {
   components: {
     NameForm,
-    NameViewer,
-  },
+    NameViewer
+  }
 };
 </script>

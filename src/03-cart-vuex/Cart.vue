@@ -29,10 +29,10 @@ import { mapState, mapGetters, mapMutations } from "vuex";
 export default {
   computed: {
     ...mapState("cart", ["cart"]),
-    ...mapGetters("cart", ["total"]),
+    ...mapGetters("cart", ["total"])
   },
   methods: {
-    ...mapMutations("cart", ["removeCartItem"]),
-  },
+    ...mapMutations("cart", ["removeCartItem"])
+  }
 };
 </script>
