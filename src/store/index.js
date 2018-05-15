@@ -11,6 +11,6 @@ export const storeConfig = {
     cart,
     articles
   }
-}
+};
 
 export default new Vuex.Store(storeConfig);

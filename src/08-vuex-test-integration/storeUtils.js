@@ -3,7 +3,6 @@ import Vuex from "vuex";
 import { cloneDeep, merge } from "lodash";
 import { storeConfig } from "@/store";
 
-
 export const createStore = (mockOptions = {}) => {
   const storeMock = merge(cloneDeep(storeConfig), mockOptions);
   const store = new Vuex.Store(storeMock);
