@@ -1,6 +1,6 @@
 import Vue from "vue";
-import { mount, shallow } from "@vue/test-utils";
-import Hello from "../Hello.vue";
+import { mount, shallowMount } from "@vue/test-utils";
+import Hello from "../Hello";
 
 /** Testing using plain Vue **/
 
@@ -66,7 +66,7 @@ describe("Hello component", () => {
 
   it("renders correctly after changing the name state", () => {
     const comp = mount(Hello);
-    comp.setData({ name: "Camelo" });
+    comp.setData({ name: "Camel" });
     expect(comp.html()).toMatchSnapshot();
   });
 

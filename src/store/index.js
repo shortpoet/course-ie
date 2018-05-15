@@ -6,9 +6,11 @@ import articles from "./articles";
 
 Vue.use(Vuex);
 
-export default new Vuex.Store({
+export const storeConfig = {
   modules: {
     cart,
     articles
   }
-});
+}
+
+export default new Vuex.Store(storeConfig);

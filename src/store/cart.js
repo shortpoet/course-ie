@@ -1,3 +1,5 @@
+import axios from "axios";
+
 export default {
   state: () => ({
     cart: []
@@ -9,7 +11,10 @@ export default {
     addToCart(state, cartItem) {
       const index = state.cart.findIndex(item => item.id === cartItem.id);
       if (index === -1) {
-        state.cart.push({ ...cartItem, quantity: 1 });
+        state.cart.push({
+          ...cartItem,
+          quantity: 1
+        });
       } else {
         state.cart[index].quantity++;
       }
@@ -18,6 +23,12 @@ export default {
   getters: {
     total: state =>
       state.cart.reduce((acum, item) => acum + item.price * item.quantity, 0)
+  },
+  actions: {
+    async fetchCart({ commit }) {
+      const { data: cart } = await axios.get("/someCartEndpoint");
+      commit("addToCart", cart);
+    }
   },
   namespaced: true
 };

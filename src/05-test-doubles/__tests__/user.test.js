@@ -48,9 +48,8 @@ describe("User", () => {
 
   describe("fetchUser", () => {
     it("gets a user", async () => {
-      const res = await userModel.fetchUser(1);
-      const expectedRes = "https://jsonplaceholder.typicode.com/users/1";
-      return expect(res).toBe(expectedRes);
+      const { data } = await userModel.fetchUser(1);
+      return expect(data).toBe(1);
     });
   });
 });
