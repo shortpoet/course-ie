@@ -1,5 +1,5 @@
 <template>
-	<div id="app">
+	<div>
 		<cart :cart="cart" @remove="removeCartItem"/>
 		<articles :articles="articles" @add="addToCart"/>
 	</div>

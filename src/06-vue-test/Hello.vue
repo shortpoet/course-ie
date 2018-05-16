@@ -15,7 +15,7 @@ export default {
   methods: {
     sayHi() {
       this.$emit("sayHi", "Hi!");
-    },
-  },
+    }
+  }
 };
 </script>

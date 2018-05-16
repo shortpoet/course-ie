@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Example from "./01-event-bus";
+import Example from "./09-socketio";
 
 export default {
   name: "app",

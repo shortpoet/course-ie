@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "server": "node server",
     "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
     "test": "vue-cli-service test:unit",
@@ -10,7 +11,11 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "express": "^4.16.3",
+    "socket.io": "^2.1.0",
+    "socket.io-client": "^2.1.0",
     "vue": "^2.5.16",
+    "vue-socket.io": "^2.1.1-b",
     "vuex": "^3.0.1"
   },
   "devDependencies": {
