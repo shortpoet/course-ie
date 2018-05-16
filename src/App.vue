@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Example from "./09-socketio";
+import Example from "./10-socketio-vuex";
 
 export default {
   name: "app",

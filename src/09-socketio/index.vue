@@ -12,7 +12,7 @@ import Articles from "./Articles";
 export default {
   components: {
     Cart,
-    Articles,
+    Articles
   }
 };
 </script>
