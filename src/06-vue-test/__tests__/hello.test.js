@@ -71,7 +71,7 @@ describe("Hello component", () => {
   });
 
   it("renders correctly passing the from prop", () => {
-    const propsData = { greeter: "Joe" };
+    const propsData = { greeter: "Dave" };
     const comp = mount(Hello, { propsData });
 
     expect(comp.html()).toMatchSnapshot();

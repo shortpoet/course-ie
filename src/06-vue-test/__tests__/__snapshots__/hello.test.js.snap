@@ -16,7 +16,7 @@ exports[`Hello component renders correctly after changing the name state 1`] = `
 
 exports[`Hello component renders correctly passing the from prop 1`] = `
 <div>
-  Hello Vue from Joe!
+  Hello Vue from Dave!
   <button>Say Hi</button>
 </div>
 `;

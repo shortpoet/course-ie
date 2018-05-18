@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Example from "./10-socketio-vuex";
+import Example from "./11-dynamic-components";
 
 export default {
   name: "app",
