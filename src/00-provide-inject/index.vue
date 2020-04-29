@@ -7,7 +7,7 @@ import Parent from "./Parent";
 
 export default {
   provide: {
-    name: "Jessie"
+    name: "Carlos"
   },
   components: {
     Parent

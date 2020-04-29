@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "server": "node server",
-    "serve": "vue-cli-service serve --open",
+    "serve": "vue-cli-service serve --open --port 8082",
     "build": "vue-cli-service build",
     "test": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint"
